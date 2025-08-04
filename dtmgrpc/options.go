@@ -1,7 +1,7 @@
 package dtmgrpc
 
 import (
-	"github.com/dtm-labs/client/dtmcli/dtmimp"
+	"github.com/tengzbiao/dtm-client/dtmcli/dtmimp"
 )
 
 // TransBaseOption setup func for TransBase

@@ -7,12 +7,12 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/dtm-labs/client/dtmcli"
-	"github.com/dtm-labs/client/dtmcli/dtmimp"
-	"github.com/dtm-labs/client/dtmgrpc/dtmgimp"
-	"github.com/dtm-labs/client/workflow/wfpb"
 	"github.com/dtm-labs/logger"
 	"github.com/go-resty/resty/v2"
+	"github.com/tengzbiao/dtm-client/dtmcli"
+	"github.com/tengzbiao/dtm-client/dtmcli/dtmimp"
+	"github.com/tengzbiao/dtm-client/dtmgrpc/dtmgimp"
+	"github.com/tengzbiao/dtm-client/workflow/wfpb"
 	"google.golang.org/grpc"
 )
 

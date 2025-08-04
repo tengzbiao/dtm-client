@@ -3,10 +3,10 @@ package workflow
 import (
 	"context"
 
-	"github.com/dtm-labs/client/dtmcli/dtmimp"
-	"github.com/dtm-labs/client/dtmgrpc"
-	"github.com/dtm-labs/client/dtmgrpc/dtmgimp"
-	"github.com/dtm-labs/client/workflow/wfpb"
+	"github.com/tengzbiao/dtm-client/dtmcli/dtmimp"
+	"github.com/tengzbiao/dtm-client/dtmgrpc"
+	"github.com/tengzbiao/dtm-client/dtmgrpc/dtmgimp"
+	"github.com/tengzbiao/dtm-client/workflow/wfpb"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 	"google.golang.org/protobuf/types/known/emptypb"

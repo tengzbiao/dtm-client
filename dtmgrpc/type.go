@@ -10,10 +10,10 @@ import (
 	context "context"
 	"errors"
 
-	"github.com/dtm-labs/client/dtmcli"
-	"github.com/dtm-labs/client/dtmcli/dtmimp"
-	"github.com/dtm-labs/client/dtmgrpc/dtmgimp"
 	"github.com/dtm-labs/dtmdriver"
+	"github.com/tengzbiao/dtm-client/dtmcli"
+	"github.com/tengzbiao/dtm-client/dtmcli/dtmimp"
+	"github.com/tengzbiao/dtm-client/dtmgrpc/dtmgimp"
 	grpc "google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"

@@ -4,11 +4,11 @@ import (
 	"context"
 	"encoding/base64"
 
-	"github.com/dtm-labs/client/dtmcli"
-	"github.com/dtm-labs/client/dtmcli/dtmimp"
-	"github.com/dtm-labs/client/dtmcli/logger"
-	"github.com/dtm-labs/client/dtmgrpc/dtmgimp"
-	"github.com/dtm-labs/client/dtmgrpc/dtmgpb"
+	"github.com/tengzbiao/dtm-client/dtmcli"
+	"github.com/tengzbiao/dtm-client/dtmcli/dtmimp"
+	"github.com/tengzbiao/dtm-client/dtmcli/logger"
+	"github.com/tengzbiao/dtm-client/dtmgrpc/dtmgimp"
+	"github.com/tengzbiao/dtm-client/dtmgrpc/dtmgpb"
 	"google.golang.org/protobuf/encoding/protojson"
 	"google.golang.org/protobuf/types/known/emptypb"
 )

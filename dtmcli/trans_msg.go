@@ -11,7 +11,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/dtm-labs/client/dtmcli/dtmimp"
+	"github.com/tengzbiao/dtm-client/dtmcli/dtmimp"
 )
 
 // Msg reliable msg type
