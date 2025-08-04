@@ -49,6 +49,7 @@ type connConfig struct {
 var (
 	normalClients, rawClients sync.Map
 	connMutex                 sync.RWMutex
+	balancerName              = "round_robin" // 默认使用round_robin负载均衡
 )
 
 // ClientInterceptors declares grpc.UnaryClientInterceptors slice
@@ -99,7 +100,7 @@ func GetGrpcConn(grpcServer string, isRaw bool) (conn *grpc.ClientConn, rerr err
 
 	// 创建连接配置
 	opts := []grpc.DialOption{
-		grpc.WithDefaultServiceConfig(`{"loadBalancingConfig": [{"round_robin":{}}]}`),
+		grpc.WithDefaultServiceConfig(fmt.Sprintf(`{"loadBalancingConfig": [{"%s":{}}],"healthCheckConfig":{"serviceName":""}}`, balancerName)),
 		grpc.WithTransportCredentials(insecure.NewCredentials()),
 		grpc.WithKeepaliveParams(keepalive.ClientParameters{
 			Time:                10 * time.Second,
